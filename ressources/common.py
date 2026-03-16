@@ -476,6 +476,7 @@ def write_settings_ini(
     biniou_global_settings_auth,
     biniou_global_settings_auth_message,
     biniou_global_settings_share,
+    biniou_global_settings_useAPI,
     biniou_global_settings_steps_max,
     biniou_global_settings_batch_size_max,
     biniou_global_settings_width_max_img_create,
@@ -506,6 +507,7 @@ biniou_global_inbrowser = {biniou_global_settings_inbrowser}\n\
 biniou_global_auth = {biniou_global_settings_auth}\n\
 biniou_global_auth_message = \"{biniou_global_settings_auth_message}\"\n\
 biniou_global_share = {biniou_global_settings_share}\n\
+biniou_global_useAPI = {biniou_global_settings_useAPI}\n\
 biniou_global_steps_max = {biniou_global_settings_steps_max}\n\
 biniou_global_batch_size_max = {biniou_global_settings_batch_size_max}\n\
 biniou_global_width_max_img_create = {biniou_global_settings_width_max_img_create}\n\

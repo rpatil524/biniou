@@ -84,6 +84,7 @@ biniou_global_inbrowser = False
 biniou_global_auth = False
 biniou_global_auth_message = "Welcome to biniou !"
 biniou_global_share = False
+biniou_global_useAPI = False
 biniou_global_steps_max = 100
 biniou_global_batch_size_max = 4
 biniou_global_width_max_img_create = 4096
@@ -117,6 +118,7 @@ if biniou_global_auth == True:
 
 if biniou_global_auth == False:
     biniou_global_share = False
+#    biniou_global_useAPI = False
 
 with open("./version", "r", encoding="utf-8") as fichier:
     biniou_global_version = fichier.read()
@@ -2512,7 +2514,13 @@ theme_gradio = gr.themes.Base().set(
     button_primary_text_color_dark=color_white,
 )
 
-with gr.Blocks(theme=theme_gradio, title="biniou", analytics_enabled=False, allow_api=False, api_name=None) as demo:
+with gr.Blocks(
+    theme=theme_gradio,
+    title="biniou", 
+    analytics_enabled=False,
+    allow_api=False if biniou_global_useAPI == False else True,
+    api_name=None if biniou_global_useAPI == False else "Main",
+) as demo:
     nsfw_filter = gr.Textbox(value="1", visible=False)
     url_params_current = gr.Textbox(value="", visible=False)
     banner_biniou = gr.HTML("""""", visible=False)
@@ -9831,6 +9839,8 @@ with gr.Blocks(theme=theme_gradio, title="biniou", analytics_enabled=False, allo
                                             biniou_global_settings_inbrowser = gr.Checkbox(value=biniou_global_inbrowser, label=biniou_lang_tab_webui_settings_inbrowser_label, info=biniou_lang_tab_webui_settings_inbrowser_info, interactive=True)
                                     with gr.Row():
                                         with gr.Column():
+                                            biniou_global_settings_useAPI = gr.Checkbox(value=biniou_global_useAPI, label=biniou_lang_tab_webui_settings_useAPI_label, info=f"⚠️ {biniou_lang_tab_webui_settings_useAPI_info}⚠️", interactive=True)
+                                        with gr.Column():
                                             biniou_global_settings_auth = gr.Checkbox(value=biniou_global_auth, label=biniou_lang_tab_webui_settings_auth_label, info=biniou_lang_tab_webui_settings_auth_info, interactive=True)
                                         with gr.Column():
                                             biniou_global_settings_auth_message = gr.Textbox(value=biniou_global_auth_message, lines=1, max_lines=3, label=biniou_lang_tab_webui_settings_auth_msg_label, info=biniou_lang_tab_webui_settings_auth_msg_info, interactive=True if biniou_global_auth else False)
@@ -9903,6 +9913,7 @@ with gr.Blocks(theme=theme_gradio, title="biniou", analytics_enabled=False, allo
                                                 biniou_global_settings_auth,
                                                 biniou_global_settings_auth_message,
                                                 biniou_global_settings_share,
+                                                biniou_global_settings_useAPI,
                                                 biniou_global_settings_steps_max,
                                                 biniou_global_settings_batch_size_max,
                                                 biniou_global_settings_width_max_img_create,
@@ -10974,7 +10985,10 @@ with gr.Blocks(theme=theme_gradio, title="biniou", analytics_enabled=False, allo
         print(f">>>[biniou 🧠]: Up and running at https://127.0.0.1:{biniou_global_server_port}")
 
 if __name__ == "__main__":
-    demo.queue(concurrency_count=8, api_open=False).launch(
+    demo.queue(
+        concurrency_count=8,
+        api_open=False if biniou_global_useAPI == False else True,
+    ).launch(
         server_name="0.0.0.0" if biniou_global_server_name else "127.0.0.1",
         server_port=biniou_global_server_port,
         ssl_certfile="./ssl/cert.pem" if not biniou_global_share else None,
@@ -10985,7 +10999,7 @@ if __name__ == "__main__":
         auth_message=biniou_global_auth_message if biniou_global_auth else None,
         share=biniou_global_share,
         inbrowser=biniou_global_inbrowser,
-        show_api=False,
+        show_api=False if biniou_global_useAPI == False else True,
 #        allowed_paths=[""]
 #        inbrowser=True if len(sys.argv)>1 and sys.argv[1]=="--inbrowser" else biniou_global_inbrowser,
     )
