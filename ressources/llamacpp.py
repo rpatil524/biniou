@@ -158,6 +158,7 @@ model_list_llamacpp_builtin = {
     "Felladrin/gguf-MXFP4-gpt-oss-20b-Derestricted":("gpt-oss-20b-Derestricted-MXFP4_MOE.gguf", prompt_template_list_llamacpp["gpt-oss"][0], std_system_prompt),
     "bartowski/EpistemeAI_metatune-gpt20b-R1.1-GGUF":("EpistemeAI_metatune-gpt20b-R1.1-MXFP4_MOE.gguf", prompt_template_list_llamacpp["gpt-oss"][0], std_system_prompt),
     "bartowski/Mistral-Nemo-Instruct-2407-GGUF":("Mistral-Nemo-Instruct-2407-Q5_K_M.gguf", "<s>[INST] {prompt}[/INST] </s>", ""),
+    "mradermacher/Mistral-Nemo-12B-R1-v0.4-i1-GGUF":("Mistral-Nemo-12B-R1-v0.4.i1-Q5_K_M.gguf", "<s>[INST] {prompt}[/INST] </s>", ""),
     "vinimuchulski/gemma-3-12b-it-qat-q4_0-gguf":("gemma-3-12b-it-q4_0.gguf", prompt_template_list_llamacpp["Gemma 3"][0], std_system_prompt),
     "vinimuchulski/gemma-3-27b-it-qat-q4_0-gguf":("gemma-3-27b-it-q4_0.gguf", prompt_template_list_llamacpp["Gemma 3"][0], std_system_prompt),
     "mradermacher/gemma-3-12b-it-vl-Polaris-GLM-4.7-Flash-VAR-Thinking-Instruct-Heretic-Uncensored-i1-GGUF":("gemma-3-12b-it-vl-Polaris-GLM-4.7-Flash-VAR-Thinking-Instruct-Heretic-Uncensored.i1-Q5_K_M.gguf", prompt_template_list_llamacpp["Gemma 3"][0], std_system_prompt),
