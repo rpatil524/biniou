@@ -2589,6 +2589,22 @@ def lora_model_list(model, *args):
 
     return model_list_lora
 
+def lora_model_complete_list():
+    models_list = []
+    content = []
+    models_list = [
+        "-[ 👍 SD15 ]-",
+        "-[ 👌 🐢 SDXL ]-",
+        "-[ 👏 🐢 SD3 ]-",
+        "-[ 👏 🐢 SD3.5 Large ]-",
+        "-[ 👏 🐢 SD3.5 Medium ]-",
+        "-[ 🏆 🐢 Flux ]-"
+    ]
+    for item in models_list:
+        content += (list(lora_model_list(model_cleaner_sd(item)).keys()))
+    content = list(filter(None, content))
+    return content
+
 def txtinv_list(model):
     model = model_cleaner_sd(model)
     if is_sdxl(model):

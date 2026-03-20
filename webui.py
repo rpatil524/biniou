@@ -3533,6 +3533,8 @@ with gr.Blocks(
                                 <b>{biniou_lang_about_outputs}</b>{biniou_lang_tab_image_about_output_text}</br>
                                 <b>{biniou_lang_about_modelpage}</b>
                                 {autodoc(model_list_txt2img_sd)}<br />
+                                <b>{biniou_lang_lora_label}, {biniou_lang_about_modelpage}</b>
+                                {autodoc(lora_model_complete_list())}<br />
                                 """
                             )
                         with gr.Box():
@@ -4019,6 +4021,8 @@ with gr.Blocks(
                                 <b>{biniou_lang_about_outputs}</b>{biniou_lang_tab_image_about_output_text}</br>
                                 <b>{biniou_lang_about_modelpage}</b>
                                 {autodoc(model_list_txt2img_lcm)}<br />
+                                <b>{biniou_lang_lora_label}, {biniou_lang_about_modelpage}</b>
+                                {autodoc(lora_model_complete_list())}<br />
                                 """
                             )
                         with gr.Box():
@@ -4684,6 +4688,8 @@ with gr.Blocks(
                                 <b>{biniou_lang_about_outputs}</b>{biniou_lang_tab_image_about_output_text}</br>
                                 <b>{biniou_lang_about_modelpage}</b>
                                 {autodoc(model_list_img2img)}<br />
+                                <b>{biniou_lang_lora_label}, {biniou_lang_about_modelpage}</b>
+                                {autodoc(lora_model_complete_list())}<br />
                                 """
                             )
                         with gr.Box():
@@ -4968,6 +4974,8 @@ with gr.Blocks(
                                 <b>{biniou_lang_about_outputs}</b>{biniou_lang_tab_image_about_output_text}</br>
                                 <b>{biniou_lang_about_modelpage}</b>
                                 {autodoc(model_list_img2img_ip)}<br />
+                                <b>{biniou_lang_lora_label}, {biniou_lang_about_modelpage}</b>
+                                {autodoc(lora_model_complete_list())}<br />
                                 """
                             )
                         with gr.Box():
@@ -6488,6 +6496,8 @@ with gr.Blocks(
                                 {autodoc(model_list_controlnet)}<br />
                                 <b>HF ControlNet models pages : </b>
                                 {autodoc(variant_list_controlnet)}<br />
+                                <b>{biniou_lang_lora_label}, {biniou_lang_about_modelpage}</b>
+                                {autodoc(lora_model_complete_list())}<br />
                                 """
                             )
                         with gr.Box():
@@ -6819,6 +6829,8 @@ with gr.Blocks(
                                 <b>{biniou_lang_about_outputs}</b>{biniou_lang_tab_image_about_output_text}</br>
                                 <b>{biniou_lang_about_modelpage}</b>
                                 {autodoc(model_list_faceid_ip)}<br />
+                                <b>{biniou_lang_lora_label}, {biniou_lang_about_modelpage}</b>
+                                {autodoc(lora_model_complete_list())}<br />
                                 """
                             )
                         with gr.Box():
