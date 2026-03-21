@@ -22,6 +22,12 @@
 
 ## Updates
 
+  * 🆕 **2026-03-21** : 🔥 ***Weekly update*** 🔥 >
+    - Add support for Chatbot high-end models [mradermacher/Mistral-Nemo-12B-R1-v0.4-i1-GGUF](https://hf.co/mradermacher/Mistral-Nemo-12B-R1-v0.4-i1-GGUF) and [mradermacher/GLM-4.7-Flash-Claude-Opus-4.5-High-Reasoning-Distill-v2-heretic-i1-GGUF](https://hf.co/mradermacher/GLM-4.7-Flash-Claude-Opus-4.5-High-Reasoning-Distill-v2-heretic-i1-GGUF).
+    - Add support for Flux LoRA models [davisbro/photo-glow](https://hf.co/davisbro/photo-glow), [glif/l0w-r3z](https://hf.co/glif/l0w-r3z), [glif-loradex-trainer/maxxd4240_minimalistPastel](https://hf.co/glif-loradex-trainer/maxxd4240_minimalistPastel) and [dvyio/flux-lora-victorian-photograph](https://hf.co/dvyio/flux-lora-victorian-photograph).
+    - Add an option to the settings panel to activate API (default: off).
+    - Automatic documentation for LoRA models in images modules.
+
   * 🆕 **2026-03-14** : 🔥 ***Weekly update*** 🔥 >
     - A huge thanks to Bulmax9797, -a security researcher- that kindly alerted me about security issues in biniou : 4 CVE have been patched this week. The API has been temporary disabled, and should be reintroduced soon. All other security issues were related to the settings modules and the way modules and configuration settings were handled, mainly through the API.
     - Add support for Chatbot code specialized model [bartowski/janhq_Jan-code-4b-GGUF](https://hf.co/bartowski/janhq_Jan-code-4b-GGUF).
@@ -43,14 +49,6 @@
     - Add support for SDXL model [kopyl/miniSDXL](https://hf.co/kopyl/miniSDXL).
     - Add support for Flux LoRA models [fofr/flux-wrong](https://hf.co/fofr/flux-wrong), [Norod78/huggingface-emoji-flux](https://hf.co/Norod78/huggingface-emoji-flux), [treeshark/mechanimalz-v2.safetensors](https://hf.co/treeshark/mechanimalz-v2.safetensors) and [nsarrazin/demo-tarot](https://hf.co/nsarrazin/demo-tarot).
     - Add support for model [Ekenayy/instruct-pix2pix-full](https://hf.co/Ekenayy/instruct-pix2pix-full) to Video Instruct-Pix2Pix module.
-
-  * 🆕 **2026-02-14** : 🔥 ***Weekly update*** 🔥 >
-    - Bugfix for issue [#74](https://github.com/Woolverine94/biniou/issues/74) , which is linked to the way new versions of pip handles the old pip packages. As this issue also affect update scripts, if you tried to update biniou during this past week, you should have been impacted. If you encountered the error **`ModuleNotFoundError: No module named 'pkg_resources'`** during the update of biniou at Real-ESRGAN install step, you only have to re-launch the update script a second time to resolve this issue.
-    - Add support for Chatbot high-end models [mradermacher/Qwen3-32B-Kimi-K2-Thinking-Distill-i1-GGUF](https://hf.co/mradermacher/Qwen3-32B-Kimi-K2-Thinking-Distill-i1-GGUF) and [mradermacher/gemma-3-12b-it-vl-Polaris-GLM-4.7-Flash-VAR-Thinking-Instruct-Heretic-Uncensored-i1-GGUF](https://hf.co/mradermacher/gemma-3-12b-it-vl-Polaris-GLM-4.7-Flash-VAR-Thinking-Instruct-Heretic-Uncensored-i1-GGUF). 
-    - Add support for PixArt-Alpha DMD 1-step model [PixArt-alpha/PixArt-Alpha-DMD-XL-2-512x512](https://hf.co/PixArt-alpha/PixArt-Alpha-DMD-XL-2-512x512). 
-    - Add support for bark model [artificial-feelings/bark-forked](https://hf.co/artificial-feelings/bark-forked). 
-    - Add support for SDXL LoRA models [Norod78/sdxl-muppetshow-lora](https://hf.co/Norod78/sdxl-muppetshow-lora) and [Norod78/cctv-stlye-sdxl](https://hf.co/Norod78/cctv-stlye-sdxl).
-    - Add support for Flux LoRA models [fofr/flux-y2k](https://hf.co/fofr/flux-y2k) and [Norod78/FluxToon_style_flux_lora](https://hf.co/Norod78/FluxToon_style_flux_lora).
 
 ---
 
