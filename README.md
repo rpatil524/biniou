@@ -25,7 +25,7 @@
   * 🆕 **2026-03-21** : 🔥 ***Weekly update*** 🔥 >
     - Add support for Chatbot high-end models [mradermacher/Mistral-Nemo-12B-R1-v0.4-i1-GGUF](https://hf.co/mradermacher/Mistral-Nemo-12B-R1-v0.4-i1-GGUF) and [mradermacher/GLM-4.7-Flash-Claude-Opus-4.5-High-Reasoning-Distill-v2-heretic-i1-GGUF](https://hf.co/mradermacher/GLM-4.7-Flash-Claude-Opus-4.5-High-Reasoning-Distill-v2-heretic-i1-GGUF).
     - Add support for Flux LoRA models [davisbro/photo-glow](https://hf.co/davisbro/photo-glow), [glif/l0w-r3z](https://hf.co/glif/l0w-r3z), [glif-loradex-trainer/maxxd4240_minimalistPastel](https://hf.co/glif-loradex-trainer/maxxd4240_minimalistPastel) and [dvyio/flux-lora-victorian-photograph](https://hf.co/dvyio/flux-lora-victorian-photograph).
-    - Add an option to the settings panel to activate API (default: off).
+    - Add an option to the settings panel to activate API (default: off). You should not activate this option if you're planning to allow public access to biniou without authentication. 
     - Automatic documentation for LoRA models in images modules.
 
   * 🆕 **2026-03-14** : 🔥 ***Weekly update*** 🔥 >
