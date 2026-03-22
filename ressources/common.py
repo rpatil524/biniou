@@ -2490,6 +2490,7 @@ def lora_model_list(model, *args):
             "Norod78/huggingface-emoji-flux":("Huggingface-Emoji_Flux-LoRA-1962967.safetensors", "huggingface emoji"),
             "nsarrazin/demo-tarot":("lora.safetensors", "TOK"),
             "Norod78/johnny-5-robot-flux-lora":("Johnny5_Robot-Flux-LoRA-1747271.safetensors", "Johnny5 robot"),
+            "gokaygokay/Flux-Game-Assets-LoRA-v2":("game_asst.safetensors", "wbgmsst, white background"),
             "-[ 🏆 🐢 🇯🇵 Anime Flux LoRA ]-":("ghibli-characters-flux-lora.safetensors", "Ghibli style"),
             "alvarobartt/ghibli-characters-flux-lora":("ghibli-characters-flux-lora.safetensors", "Ghibli style"),
             "dataautogpt3/FLUX-AestheticAnime":("Flux_1_Dev_LoRA_AestheticAnime.safetensors", ""),
@@ -2540,6 +2541,7 @@ def lora_model_list(model, *args):
             "Norod78/JojosoStyle-flux-lora":("JojosoStyle_flux_lora.safetensors", "JojosoStyle"),
             "Norod78/FluxToon_style_flux_lora":("FluxToon_style_flux_lora.safetensors", "FluxToon style"),
             "Norod78/pokirl-flux":("Flux_PokIRL_Pokemon_LoRA_1855673.safetensors", "PokIRL pokemon"),
+            "Ryouko65777/Anime-Flux":("lora.safetensors", "anime style"),
             "-[ 🏠 Local models ]-":("", ""),
     }
 
