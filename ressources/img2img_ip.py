@@ -104,6 +104,7 @@ model_list_img2img_ip_builtin = [
     "-[ 👌 🇯🇵 Anime SDXL ]-",
     "GraydientPlatformAPI/geekpower-cellshade-xl",
     "cagliostrolab/animagine-xl-4.0",
+    "Eugeoter/anime_illust_diffusion_xl",
     "Bakanayatsu/ponyDiffusion-V6-XL-Turbo-DPO",
     "OnomaAIResearch/Illustrious-xl-early-release-v0",
     "GraydientPlatformAPI/sanae-xl",
