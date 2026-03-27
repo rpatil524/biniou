@@ -21,6 +21,7 @@ os.makedirs(model_path_img2vid, exist_ok=True)
 model_list_img2vid = [
     "stabilityai/stable-video-diffusion-img2vid",
     "stabilityai/stable-video-diffusion-img2vid-xt",
+    "vdo/stable-video-diffusion-img2vid-xt-1-1",
 ]
 
 # Bouton Cancel
@@ -82,7 +83,7 @@ def video_img2vid(
         resume_download=True,
         local_files_only=True if offline_test() else None
     )
-    
+
     pipe_img2vid = schedulerer(pipe_img2vid, sampler_img2vid)
 #    tomesd.apply_patch(pipe_img2vid, ratio=tkme_img2vid)
     if device_label_img2vid == "cuda" :
@@ -90,7 +91,7 @@ def video_img2vid(
         pipe_img2vid.enable_model_cpu_offload()
     else :
         pipe_img2vid = pipe_img2vid.to(device_img2vid)
-    
+
     if seed_img2vid == 0:
         random_seed = random.randrange(0, 10000000000, 1)
         final_seed = random_seed
@@ -102,6 +103,10 @@ def video_img2vid(
 
     image_input = PIL.Image.open(img_img2vid)
     image_input = image_input.convert("RGB")
+    dim_size = round_size(image_input)
+    image_input = image_input.resize((dim_size[0], dim_size[1]))
+    width_img2vid = dim_size[0]
+    height_img2vid = dim_size[1]
 
     if output_type_img2vid == "gif" :
         savename = []
