@@ -33,6 +33,7 @@ model_list_pix2pix_builtin = [
     "instruction-tuning-sd/cartoonizer",
     "diffusers/sdxl-instructpix2pix-768",
     "pravin006/sdxl-pix2pix-lora-finetuned",
+    "Jephson/cartoonization-finetuned",
 ]
 
 for k in range(len(model_list_pix2pix_builtin)):
@@ -167,6 +168,8 @@ def image_pix2pix(
         conditioning, pooled = compel(prompt_pix2pix)
         neg_conditioning, neg_pooled = compel(negative_prompt_pix2pix)
         [conditioning, neg_conditioning] = compel.pad_conditioning_tensors_to_same_length([conditioning, neg_conditioning])
+#    elif modelid_pix2pix == "Rexlygod/stable_deffusion_botox":
+#        [conditioning, neg_conditioning] = ["", ""]
     else :
         compel = Compel(tokenizer=pipe_pix2pix.tokenizer, text_encoder=pipe_pix2pix.text_encoder, truncate_long_prompts=False, device=device_pix2pix)
         conditioning = compel.build_conditioning_tensor(prompt_pix2pix)
