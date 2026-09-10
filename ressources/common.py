@@ -2443,6 +2443,8 @@ def lora_model_list(model, *args):
             "Muapi/sci-fi-environments":("sci-fi-environments.safetensors", ""),
             "glif-loradex-trainer/heather_90s_corporate_training":("90s_corporate_training.safetensors", "90s corporate training"),
             "artshooter/flux-hand-drawn-stickman":("flux_hand_drawn_stickman.safetensors", "huashuo drawing"),
+            "strangerzonehf/Flux-Sketch-Smudge-LoRA":("Sketch-Smudge.safetensors", "Sketch Smudge"),
+            "strangerzonehf/2DAura-Flux":("2DAura.safetensors", "2D Aura"),
             "-[ 🏆 🐢 📦 Objects Flux LoRA ]-":("FLUX-dev-lora-Logo-Design.safetensors", "wablogo, logo, Minimalist"),
             "Shakker-Labs/FLUX.1-dev-LoRA-Logo-Design":("FLUX-dev-lora-Logo-Design.safetensors", "wablogo, logo, Minimalist"),
             "prithivMLmods/Ton618-Tarot-Cards-Flux-LoRA":("Tarot-card.safetensors", "Tarot card"),
