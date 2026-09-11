@@ -353,18 +353,27 @@ model_list_llamacpp.update(model_list_llamacpp_local)
 
 def download_model(modelid_llamacpp, quantization_llamacpp):
     modelid_llamacpp = model_cleaner_llamacpp(modelid_llamacpp)
+    model_prefix = modelid_llamacpp.split('/')[1].replace('-GGUF', '')
     try:
         test_model = model_list_llamacpp[modelid_llamacpp]
     except KeyError as ke:
         test_model = None
-    if (test_model == None) and (quantization_llamacpp == "") and ("TheBloke" in modelid_llamacpp):
-        model_filename = f"{modelid_llamacpp.split('/')[1].replace('-GGUF', '').lower()}.Q5_K_S.gguf"
-    elif (test_model == None) and (quantization_llamacpp == "") :
-        model_filename = f"{modelid_llamacpp.split('/')[1].replace('-GGUF', '')}.Q5_K_S.gguf"
+    if (test_model == None) and (quantization_llamacpp == ""):
+        if ("TheBloke" in modelid_llamacpp):
+            model_filename = f"{model_prefix.lower()}.Q5_K_M.gguf"
+        elif ("bartowski" in modelid_llamacpp):
+            model_filename = f"{model_prefix}-Q5_K_M.gguf"
+        elif ("mradermacher" in modelid_llamacpp):
+            model_filename = f"{model_prefix}.Q5_K_M.gguf"
+        elif ("unsloth" in modelid_llamacpp):
+            model_filename = f"{model_prefix}-UD-Q5_K_M.gguf"
+        else:
+            model_filename = f"{model_prefix}.Q5_K_M.gguf"
     elif (quantization_llamacpp != ""):
         model_filename = quantization_llamacpp
     else:
         model_filename = model_list_llamacpp[modelid_llamacpp][0]
+
     if (modelid_llamacpp[0:9] != "./models/"):
         hf_hub_path_llamacpp = hf_hub_download(
             repo_id=modelid_llamacpp,
