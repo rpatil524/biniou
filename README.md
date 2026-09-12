@@ -22,6 +22,12 @@
 
 ## Updates
 
+  * 🆕 **2026-09-12** : 🔥 ***Weekly update*** 🔥 >
+    - Add support for Chatbot model high-end model [bartowski/thomsonreuters_Thomson-1.0-Small-GGUF](https://hf.co/bartowski/thomsonreuters_Thomson-1.0-Small-GGUF) and update of Granite 4.1 to [bartowski/granite-4.2-30b-GGUF](https://hf.co/bartowski/granite-4.2-30b-GGUF).
+    - Add support for Instruct-pix2pix model [Jephson/cartoonization-finetuned](https://hf.co/Jephson/cartoonization-finetuned)
+    - Add support for Flux LoRA models [strangerzonehf/Flux-Sketch-Smudge-LoRA](https://hf.co/strangerzonehf/Flux-Sketch-Smudge-LoRA), [strangerzonehf/2DAura-Flux](https://hf.co/strangerzonehf/2DAura-Flux), [ampp/rough-kids-illustrations](https://hf.co/ampp/rough-kids-illustrations) and [Wakkamaruh/balatro-poker-cards](https://hf.co/Wakkamaruh/balatro-poker-cards).
+    - Code enhancement and add automated support for any Bartowski, mradermacher and Unsloth GGUF models for Chatbot module.
+
   * 🆕 **2026-09-05** : 🔥 ***Weekly update*** 🔥 >
     - Add support for Chatbot model [bartowski/granite-4.2-8b-GGUF](https://hf.co/bartowski/granite-4.2-8b-GGUF) and high-end model [bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF](https://hf.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF).
     - Update of SDXL model RunDiffusion/Juggernaut-XL-v6 to [limiteinductive/Juggernaut-XL_v9_RunDiffusionPhoto_v2](https://hf.co/limiteinductive/Juggernaut-XL_v9_RunDiffusionPhoto_v2).
@@ -44,14 +50,6 @@
     - Add support for Real ESRGAN x4 model [schwgHao/RealESRGAN_x4plus](https://hf.co/schwgHao/RealESRGAN_x4plus).
     - Add support for Flux specialized model [BxuanZ/FLUX-RS](https://hf.co/BxuanZ/FLUX-RS).
     - Add support for Flux LoRA models [fffiloni/sweet-brush](https://hf.co/fffiloni/sweet-brush), [WizWhite/wizard-s-vintage-sardine-tins](https://hf.co/WizWhite/wizard-s-vintage-sardine-tins), [gokaygokay/Flux-Expressive-LoRA](https://hf.co/gokaygokay/Flux-Expressive-LoRA) and [glif-loradex-trainer/heather_90s_corporate_training](https://hf.co/glif-loradex-trainer/heather_90s_corporate_training).
-
-
-  * 🆕 **2026-08-08** : 🔥 ***Weekly update*** 🔥 >
-    - Add support for Chatbot code-specialized model [bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF](https://hf.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF) and tiny model [YoozLabs/Qwen3.5-4B-qat-GGUF](https://hf.co/YoozLabs/Qwen3.5-4B-qat-GGUF).
-    - Add support for Whisper model [AMAImedia/Whisper-Large-V3-Turbo-Darwin-NOESIS-FP16](https://hf.co/AMAImedia/Whisper-Large-V3-Turbo-Darwin-NOESIS-FP16).
-    - Add support for SDXL model [neta-art/neta-xl-2.0](https://hf.co/neta-art/neta-xl-2.0).
-    - Add support for Flux LoRA models [furaidosu/flux-lora-tosti-vector-full-captions](https://hf.co/furaidosu/flux-lora-tosti-vector-full-captions), [Muapi/sci-fi-environments](https://hf.co/Muapi/sci-fi-environments), [Muapi/midjorney-lora-flux](https://hf.co/Muapi/midjorney-lora-flux) and [bingbangboom/flux_whimscape](https://hf.co/bingbangboom/flux_whimscape).
-    - Experimental bugfix for CUDA users who experiments missing CUDA libraries (credits for this one goes to @RMLogicIO : a huge thanks 🙏). Feedbacks are welcomed !
 
 [Updates archive](https://github.com/Woolverine94/biniou/wiki/Updates-archive)
 
